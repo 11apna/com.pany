@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaadugar Company - Free Cricket Predictions</title>
+    <!-- Meta Pixel Code - Optimized Placement -->
+    <script>
+        !function(f,b,e,v,n,t,s){
+            if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)
+        }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1400824225083551');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1400824225083551&ev=PageView&noscript=1"/>
+    </noscript>
+    <style>
+        /* Critical CSS - Inlined for ultra-fast loading */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a16;
+            color: #fff;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(20, 30, 48, 0.9) 0%, rgba(36, 59, 85, 0.9) 100%);
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px 15px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        .header {
+            text-align: center;
+            padding: 15px 0 10px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffd700;
+            margin-bottom: 15px;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+            animation: pulseGlow 2s infinite alternate;
+        }
+        
+        .profile-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            background: linear-gradient(to right, #ffd700, #ffaa00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+        }
+        
+        .profile-subtitle {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        /* Button Styles - Optimized for High CTR */
+        .btn {
+            display: block;
+            background: linear-gradient(90deg, #ff512f 0%, #f09819 100%);
+            color: white;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 50px;
+            padding: 18px 20px;
+            margin: 12px 0;
+            text-align: center;
+            width: 100%;
+            border: none;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 20px rgba(240, 152, 25, 0.4);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #f09819 0%, #ff512f 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn:hover, .btn:active {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(240, 152, 25, 0.6);
+        }
+        
+        .btn:hover::before {
+            opacity: 1;
+        }
+        
+        .btn-highlight {
+            background: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
+            box-shadow: 0 10px 20px rgba(0, 176, 155, 0.4);
+            animation: pulse 2s infinite;
+        }
+        
+        .btn-highlight:hover, .btn-highlight:active {
+            box-shadow: 0 15px 30px rgba(0, 176, 155, 0.6);
+        }
+        
+        .btn-highlight::before {
+            background: linear-gradient(90deg, #96c93d 0%, #00b09b 100%);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 15px 0;
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #ffd700;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, #ff512f, #f09819);
+            border-radius: 3px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 15px 10px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .feature-text {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        
+        /* Urgency Section */
+        .urgency-section {
+            background: rgba(220, 53, 69, 0.2);
+            border: 2px solid rgba(220, 53, 69, 0.4);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            animation: shake 2s infinite;
+        }
+        
+        .urgency-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        
+        .urgency-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .countdown-item {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 10px 5px;
+            min-width: 60px;
+        }
+        
+        .countdown-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffcc00;
+        }
+        
+        .countdown-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+        
+        /* Testimonials */
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #f09819;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #ffcc00;
+            text-align: right;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        .owner-link {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+        
+        .owner-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 176, 155, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(0, 176, 155, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 176, 155, 0);
+            }
+        }
+        
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+            }
+        }
+        
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: translateX(-5px);
+            }
+            20%, 40%, 60%, 80% {
+                transform: translateX(5px);
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding-bottom: 100px;
+            }
+            
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-name {
+                font-size: 1.6rem;
+            }
+            
+            .btn {
+                padding: 16px 20px;
+                font-size: 1.05rem;
+            }
+            
+            .mobile-fixed-btn {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                background: rgba(10, 10, 22, 0.95);
+                backdrop-filter: blur(10px);
+                border-top: 2px solid rgba(255, 215, 0, 0.3);
+                z-index: 1000;
+                animation: slideUp 0.5s ease-out;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .mobile-fixed-btn {
+                display: none;
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+        
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        
+        .mt-20 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-container">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/15439492/6934bc14486fa_47148080-b1e6-4ab0-8145-5f2281b77ecb.jpeg" alt="Jaadugar Company" class="profile-image">
+                <h1 class="profile-name">Jaadugar Company</h1>
+                <p class="profile-subtitle">100% Accurate Cricket Predictions</p>
+                <a href="https://t.me/+_g8MHYZTblgzYzc1" class="btn btn-highlight">
+                    🔥 JOIN FREE TELEGRAM CHANNEL 🔥
+                </a>
+            </div>
+        </header>
+        
+        <section class="features">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <div class="feature-text">95%+ Accuracy Rate</div>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <div class="feature-text">Instant Match Updates</div>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">💰</span>
+                    <div class="feature-text">Free Daily Tips</div>
+                </li>
+                <li class="feature-item">
+                    <span class="feature-icon">🏆</span>
+                    <div class="feature-text">Expert Analysis</div>
+                </li>
+            </ul>
+        </section>
+        
+        <div class="urgency-section">
+            <h3 class="urgency-title">⚠️ LIMITED TIME OFFER ⚠️</h3>
+            <p class="urgency-text">This link will expire soon! Join now to get FREE predictions for the next big match.</p>
+            
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-value" id="hours">12</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="minutes">45</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="seconds">30</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+            
+            <a href="https://t.me/+_g8MHYZTblgzYzc1" class="btn mt-20">
+                🚀 CLICK HERE TO JOIN NOW 🚀
+            </a>
+        </div>
+        
+        <div class="testimonial">
+            <p class="testimonial-text">"Joined Jaadugar Company last week and already made ₹15,000 profit! Their predictions are spot on. Highly recommended!"</p>
+            <div class="testimonial-author">- Rohit S., Mumbai</div>
+        </div>
+        
+        <a href="https://t.me/+_g8MHYZTblgzYzc1" class="btn mb-20">
+            ✅ GET FREE CRICKET PREDICTIONS NOW ✅
+        </a>
+        
+        <footer class="footer">
+            <p>© 2023 Jaadugar Company. All rights reserved.</p>
+            <p class="mt-20">Owner: <a href="https://t.me/RanaOnlyRana" class="owner-link" target="_blank">@RanaOnlyRana</a></p>
+            <p class="mb-10">This is a free service. We do not guarantee winnings.</p>
+        </footer>
+    </div>
+    
+    <!-- Mobile Fixed Button -->
+    <div class="mobile-fixed-btn">
+        <a href="https://t.me/+_g8MHYZTblgzYzc1" class="btn btn-highlight">
+            🎯 TAP TO JOIN FREE TELEGRAM 🎯
+        </a>
+    </div>
+
+    <!-- Optimized Script for Performance -->
+    <script>
+        // Ultra-fast loading - No dependencies
+        document.addEventListener('DOMContentLoaded', function() {
+            // Preload critical images
+            const preloadImages = [
+                'https://d1yei2z3i6k35z.cloudfront.net/15439492/6934bc14486fa_47148080-b1e6-4ab0-8145-5f2281b77ecb.jpeg'
+            ];
+            
+            preloadImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+            
+            // Countdown timer for urgency
+            function updateCountdown() {
+                const hoursEl = document.getElementById('hours');
+                const minutesEl = document.getElementById('minutes');
+                const secondsEl = document.getElementById('seconds');
+                
+                let hours = parseInt(hoursEl.textContent);
+                let minutes = parseInt(minutesEl.textContent);
+                let seconds = parseInt(secondsEl.textContent);
+                
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                    
+                    if (minutes < 0) {
+                        minutes = 59;
+                        hours--;
+                        
+                        if (hours < 0) {
+                            hours = 12;
+                            minutes = 0;
+                            seconds = 0;
+                        }
+                    }
+                }
+                
+                hoursEl.textContent = hours.toString().padStart(2, '0');
+                minutesEl.textContent = minutes.toString().padStart(2, '0');
+                secondsEl.textContent = seconds.toString().padStart(2, '0');
+            }
+            
+            // Update countdown every second
+            setInterval(updateCountdown, 1000);
+            
+            // Button click tracking
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Send event to Meta Pixel
+                    if (typeof fbq !== 'undefined') {
+                        fbq('track', 'Lead');
+                    }
+                    
+                    // Add a small delay before navigation to ensure tracking
+                    setTimeout(() => {
+                        window.location.href = this.href;
+                    }, 200);
+                });
+            });
+            
+            // Add visual feedback for button clicks
+            buttons.forEach(button => {
+                button.addEventListener('mousedown', function() {
+                    this.style.transform = 'scale(0.95)';
+                });
+                
+                button.addEventListener('mouseup', function() {
+                    this.style.transform = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
